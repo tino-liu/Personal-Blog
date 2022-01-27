@@ -14,7 +14,7 @@ const Portfolio = () => {
 
   const [isOpen4, setIsOpen4] = useState(false);
 
-  // Amazon Practice Project
+  // CRYPTO ASSET MANAGEMENT
   const [cryptoIsOpen, setCryptoIsOpen] = useState(false);
   function toggleCryptoAsset() {
     setCryptoIsOpen(!cryptoIsOpen);
@@ -166,7 +166,7 @@ const Portfolio = () => {
       />
       {/* End Youtube Modal video */}
 
-      {/* AMAZON PRACTICE PROJECT */}
+      {/* CRYPTO ASSET MANAGEMENT */}
       <Modal
         isOpen={cryptoIsOpen}
         onRequestClose={toggleCryptoAsset}
@@ -193,7 +193,7 @@ const Portfolio = () => {
               </div>
               {/* END IMAGE */}
               <div className="portfolio_main_title">
-                <h3>Amazon Practice Project</h3>
+                <h3>Crypto Asset Management</h3>
                 <span>Details</span>
               </div>
               {/* END portfolio_main_title */}
