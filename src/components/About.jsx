@@ -15,7 +15,7 @@ const About = () => {
     <>
       <div className="tokyo_tm_about">
         <div className="about_image ">
-          <img className="about_image_resize" src="assets/img/slider/sea.jpg" alt="about" />
+          <img className="about_image_resize" src="assets/img/portfolio/sea.jpg" alt="about" />
         </div>
         {/* <div className="o-video">
           <iframe src="youtube link"></iframe>
