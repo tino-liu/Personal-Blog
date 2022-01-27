@@ -61,7 +61,7 @@ const Portfolio = () => {
                       <div className="inner">
                         <div className="entry tokyo_tm_portfolio_animation_wrap">
                           <img
-                            src="assets/img/portfolio/crypto.png"
+                            src="assets/img/portfolio/crypto.jpg"
                             alt="Web Project"
                             onClick={() => toggleCryptoAsset()}
                           />
@@ -187,7 +187,7 @@ const Portfolio = () => {
                 <div
                   className="main"
                   style={{
-                    backgroundImage: "url(assets/img/portfolio/Crypto-Intro.gif)",
+                    backgroundImage: "url(assets/img/portfolio/crypto-intro.gif)",
                   }}
                 ></div>
               </div>
