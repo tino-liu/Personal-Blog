@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Home from "../components/Home";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
+import News from "../components/News";
 
 const HomePage = () => {
   document.body.classList.add("dark");
@@ -47,14 +48,14 @@ const HomePage = () => {
                     />
                     <span className="menu_content">Portfolio</span>
                   </Tab>
-                  {/* <Tab>
+                  <Tab>
                     <img
                       className="svg"
                       src="/assets/img/svg/paper.svg"
                       alt="paper"
                     />
-                    <span className="menu_content">News</span>
-                  </Tab> */}
+                    <span className="menu_content">News & Updates</span>
+                  </Tab>
                   {/* <Tab>
                     <img
                       className="svg"
@@ -107,9 +108,9 @@ const HomePage = () => {
                 </TabPanel>
                 {/* END PORTFOLIO MENU TAB CONTENT */}
 
-                {/* <TabPanel>
+                <TabPanel>
                   <News />
-                </TabPanel> */}
+                </TabPanel>
                 {/* END NEWS MENU TAB CONTENT */}
 
                 {/* <TabPanel>
