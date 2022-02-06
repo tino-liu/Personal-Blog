@@ -5,7 +5,6 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 import News from "../components/News";
-import SinglePost from "../components/SinglePost";
 
 const HomePage = () => {
   document.body.classList.add("dark");

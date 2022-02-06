@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Social from "./Social";
 import client from "../client";
 import Modal from "react-modal";
 import PortableText from "react-portable-text";
