@@ -13,9 +13,6 @@ export default function News() {
     },
     []
   );
-
-  console.log(state.postId);
-  console.log(state.isOpen);
   function closeModal() {
     setState({ isOpen: false, postId: null });
   }
@@ -80,7 +77,7 @@ export default function News() {
                   <div className="details">
                     <div className="extra">
                       <p className="date">
-                        {post.description} by {post.author.name}
+                        By {post.author.name}
                         <span>
                           {new Date(post._createdAt).toLocaleDateString()}
                         </span>
@@ -130,7 +127,7 @@ export default function News() {
                         <div className="details">
                           <div className="extra">
                             <p className="date">
-                              By <a href="#">{post.author.name}</a>
+                              By {post.author.name}
                               <span>
                                 {new Date(post._createdAt).toLocaleString()}
                               </span>
@@ -139,8 +136,13 @@ export default function News() {
                           <h3 className="title">{}</h3>
                           <div>
                             <PortableText
-                              dataset="production"
-                              projectId="ovsx12m8"
+                              dataset={
+                                process.env.REACT_APP_SANITY_STUDIO_API_DATASET
+                              }
+                              projectId={
+                                process.env
+                                  .REACT_APP_SANITY_STUDIO_API_PROJECT_ID
+                              }
                               content={post.body}
                               serializers={{
                                 h1: (props) => (
