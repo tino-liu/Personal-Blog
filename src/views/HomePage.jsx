@@ -5,6 +5,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 import News from "../components/News";
+import SinglePost from "../components/SinglePost";
 
 const HomePage = () => {
   document.body.classList.add("dark");
@@ -20,7 +21,7 @@ const HomePage = () => {
                   <img src="/assets/img/logo/blacklogo.png" alt="brand" />
                 </Link>
               </div>
-              
+
               {/* Tab */}
               <div className="menu">
                 <ul>
@@ -48,14 +49,14 @@ const HomePage = () => {
                     />
                     <span className="menu_content">Portfolio</span>
                   </Tab>
-                  {/* <Tab>
+                  <Tab>
                     <img
                       className="svg"
                       src="/assets/img/svg/paper.svg"
                       alt="paper"
                     />
                     <span className="menu_content">News & Updates</span>
-                  </Tab> */}
+                  </Tab>
                   {/* <Tab>
                     <img
                       className="svg"
@@ -73,7 +74,6 @@ const HomePage = () => {
                   &copy; {new Date().getFullYear()} <br /> Tino Liu
                 </p>
               </div>
-
             </div>
           </div>
           {/* END LEFT MENU CONTENT */}
@@ -111,6 +111,7 @@ const HomePage = () => {
                 <TabPanel>
                   <News />
                 </TabPanel>
+
                 {/* END NEWS MENU TAB CONTENT */}
 
                 {/* <TabPanel>

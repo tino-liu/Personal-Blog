@@ -2,6 +2,7 @@ import React from "react";
 import HomePage from "../views/HomePage";
 import NotFound from "../views/NotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import SinglePost from "../components/SinglePost";
 
 const Routes = () => {
   return (
