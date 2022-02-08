@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import client from "../client";
 import Modal from "react-modal";
 import PortableText from "react-portable-text";
+import client from "../client";
 
 export default function News() {
   const [posts, setPosts] = useState([]);
@@ -13,6 +13,7 @@ export default function News() {
     },
     []
   );
+
   function closeModal() {
     setState({ isOpen: false, postId: null });
   }
@@ -156,17 +157,6 @@ export default function News() {
                                     className="text-xl font-bold my-5"
                                     {...props}
                                   />
-                                ),
-                                li: (children) => (
-                                  <li className="ml-4 list-disc">{children}</li>
-                                ),
-                                link: ({ href, children }) => (
-                                  <a
-                                    href={href}
-                                    className="text-blue-500 hover:underline"
-                                  >
-                                    {children}
-                                  </a>
                                 ),
                               }}
                             />

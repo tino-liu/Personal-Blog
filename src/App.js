@@ -7,7 +7,7 @@ const App = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-  console.log(process.env.REACT_APP_SANITY_STUDIO_API_PROJECT_ID);
+
   return (
     <div className="tokyo_tm_all_wrap">
       <Routes />
