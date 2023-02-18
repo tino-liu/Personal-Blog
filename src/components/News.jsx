@@ -85,14 +85,12 @@ export default function News() {
                       </p>
                     </div>
                     {/* END EXTRA */}
-                    <h3 className="title" onClick={() => openModal(post._id)}>
+                    <h3 className="title" onClick={openModal(post._id)}>
                       {post.title}
                     </h3>
                     <div className="tokyo_tm_read_more">
                       <a>
-                        <span onClick={() => openModal(post._id)}>
-                          Read More
-                        </span>
+                        <span onClick={openModal(post._id)}>Read More</span>
                       </a>
                     </div>
                     {/* END READ MORE BUTTON */}
